@@ -9,7 +9,7 @@ website/
 │   ├─ db.php
 │ 
 │
-├─ Home/
+├─ home/
 │   ├─ index.html
 │   ├─ script.html
 │   ├─ style.css
