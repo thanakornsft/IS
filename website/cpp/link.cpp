@@ -12,6 +12,11 @@ website/
 │
 ├─ home/
 │  ├─ home.php
+│  ├─ home.css
+│
+│
+├─ xxxx/
+│  ├─ home.php
 │  ├─ home.css 
 │ 
 │
