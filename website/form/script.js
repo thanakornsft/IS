@@ -22,6 +22,6 @@ document.getElementById("surveyForm").addEventListener("submit", function(e){
 
     // รอ 2 วินาที แล้วเปลี่ยนหน้า
     setTimeout(function(){
-        window.location.href = "../home/home.html";
+        window.location.href = "../home/home.php";
     }, 2000); // 2 sec
 });
