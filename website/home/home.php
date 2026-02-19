@@ -39,8 +39,6 @@ session_start();
             </div>
 
             <div class="dropdown" id="dropdownMenu">
-                <a href="../Home/profile.php">โปรไฟล์</a>
-                <hr>
                 <a href="../login/login.php" class="logout">ออกจากระบบ</a>
             </div>
         </div>
