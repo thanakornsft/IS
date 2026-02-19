@@ -7,9 +7,14 @@ website/
 │ 
 ├─ config/
 │   ├─ db.php
-│ 
+│
+│
 │
 ├─ home/
+│   ├─ 
+│ 
+│
+├─ form/
 │   ├─ index.html
 │   ├─ script.html
 │   ├─ style.css
