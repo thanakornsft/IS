@@ -28,7 +28,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             $_SESSION['username'] = $row['username'];
 
             // ✅ เด้งไปหน้า Home
-            header("Location: ../home/home.php");
+            header("Location: ../website/Home/index.html");
             exit();
 
         } else {
