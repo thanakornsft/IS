@@ -24,7 +24,7 @@ session_start();
     <div class="profile-area">
         <?php if(isset($_SESSION['username'])): ?>
             <div class="profile" id="profileBtn">
-                <?php echo $_SESSION['username']; ?> ⌄
+                <?php echo $_SESSION['username']; ?> ▼
             </div>
 
             <div class="dropdown" id="dropdownMenu">

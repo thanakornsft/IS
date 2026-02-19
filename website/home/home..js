@@ -1,13 +1,19 @@
-const profileBtn = document.getElementById("profileBtn");
-const dropdown = document.getElementById("dropdownMenu");
+document.addEventListener("DOMContentLoaded", function(){
 
-if(profileBtn){
-    profileBtn.addEventListener("click", function(e){
-        e.stopPropagation();
-        dropdown.classList.toggle("active");
-    });
+    const profileBtn = document.getElementById("profileBtn");
+    const dropdown = document.getElementById("dropdownMenu");
 
-    document.addEventListener("click", function(){
-        dropdown.classList.remove("active");
-    });
-}
+    if(profileBtn){
+
+        profileBtn.addEventListener("click", function(e){
+            e.stopPropagation();
+            dropdown.classList.toggle("active");
+        });
+
+        document.addEventListener("click", function(){
+            dropdown.classList.remove("active");
+        });
+
+    }
+
+});
