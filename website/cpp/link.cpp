@@ -13,6 +13,8 @@ website/
 ├─ home/
 │  ├─ home.php
 │  ├─ home.css
+│  ├─ home.js
+│  ├─ logout.css
 │
 │
 ├─ xxxx/

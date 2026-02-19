@@ -44,16 +44,6 @@ session_start();
 
 <section class="stats">
     <div class="card">
-        <h3>Market Cap</h3>
-        <p>$1.2T</p>
-    </div>
-    <div class="card">
-        <h3>BTC</h3>
-        <p class="green">+3.42%</p>
-    </div>
-    <div class="card">
-        <h3>ETH</h3>
-        <p class="red">-1.12%</p>
     </div>
 </section>
 
@@ -61,6 +51,8 @@ session_start();
 © 2026 InvestPro. All rights reserved.
 </footer>
 
-<script src="navbar.js"></script>
+<script src="home.js"></script>
 </body>
 </html>
+
+
