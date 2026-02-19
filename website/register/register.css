@@ -1,0 +1,97 @@
+body {
+height: 100vh;
+display: flex;
+align-items: center;
+justify-content: center;
+background: linear-gradient(135deg, #0f172a, #4c1d95);
+font-family: 'Segoe UI', Tahoma, sans-serif;
+}
+
+
+.register-card {
+width: 460px;
+padding: 42px;
+border-radius: 22px;
+background: rgba(255, 255, 255, 0.15);
+backdrop-filter: blur(18px);
+box-shadow: 0 30px 70px rgba(0,0,0,0.4);
+color: #fff;
+}
+
+
+.register-card h1 {
+text-align: center;
+font-size: 32px;
+margin-bottom: 8px;
+}
+
+
+.register-card p {
+text-align: center;
+font-size: 15px;
+opacity: 0.85;
+margin-bottom: 30px;
+}
+
+
+label {
+display: block;
+margin-bottom: 6px;
+font-size: 14px;
+}
+
+
+input {
+width: 100%;
+padding: 14px 16px;
+margin-bottom: 18px;
+border-radius: 14px;
+border: none;
+outline: none;
+font-size: 15px;
+}
+
+
+input:focus {
+box-shadow: 0 0 0 2px #c084fc;
+}
+
+
+button {
+width: 100%;
+padding: 15px;
+margin-top: 10px;
+border-radius: 16px;
+border: none;
+background: linear-gradient(135deg, #a855f7, #7c3aed);
+color: white;
+font-size: 17px;
+font-weight: 600;
+cursor: pointer;
+transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+
+button:hover {
+transform: translateY(-2px);
+box-shadow: 0 12px 30px rgba(0,0,0,0.35);
+}
+
+
+.back-login {
+text-align: center;
+margin-top: 22px;
+font-size: 14px;
+}
+
+
+.back-login a {
+color: #f0abfc;
+font-weight: 600;
+text-decoration: none;
+}
+
+
+.back-login a:hover {
+text-decoration: underline;
+}
