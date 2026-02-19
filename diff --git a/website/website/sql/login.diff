@@ -1,0 +1,10 @@
+diff --git a/website/website/sql/login.sql b/website/website/sql/login.sql
+deleted file mode 100644
+--- a/website/website/sql/login.sql
++++ /dev/null
+@@ -1,4 +0,0 @@
+-CREATE TABLE users (
+-  id INT AUTO_INCREMENT PRIMARY KEY,
+-  username VARCHAR(50),
+-  password VARCHAR(255)
+-);
