@@ -7,6 +7,7 @@
 <link rel="stylesheet" href="home.css">
 </head>
 <body>
+    
 
 <nav class="navbar">
     <div class="logo">Invest<span>Pro</span></div>
@@ -16,8 +17,23 @@
         <li><a href="#">Portfolio</a></li>
         <li><a href="#">Contact</a></li>
     </ul>
+    <div class="profile-area">
+        <?php if(isset($_SESSION['username'])): ?>
+            <div class="profile" id="profileBtn">
+                <?php echo $_SESSION['username']; ?> ⌄
+            </div>
+
+            <div class="dropdown" id="dropdownMenu">
+                <a href="logout.php" class="logout">ออกจากระบบ</a>
+            </div>
+        <?php else: ?>
+            <a href="login.php" class="login-btn">Login</a>
+        <?php endif; ?>
+    </div>
     <button class="login-btn">Login</button>
 </nav>
+
+
 
 <section class="hero">
     <div class="hero-text">
