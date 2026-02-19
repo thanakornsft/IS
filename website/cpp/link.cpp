@@ -11,7 +11,8 @@ website/
 │
 │
 ├─ home/
-│   ├─ 
+│  ├─ home.php
+│  ├─ home.css 
 │ 
 │
 ├─ form/
