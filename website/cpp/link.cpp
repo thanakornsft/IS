@@ -1,12 +1,7 @@
 website/
 │
-├─ login/
-│   ├─ login.php
-│   ├─ login.css
 │ 
 │ 
-├─ config/
-│   ├─ db.php
 │
 │
 │
@@ -14,7 +9,7 @@ website/
 │  ├─ home.php
 │  ├─ home.css
 │  ├─ home.js
-│  ├─ logout.css
+│  
 │
 │
 ├─ xxxx/
@@ -27,14 +22,3 @@ website/
 │   ├─ script.html
 │   ├─ style.css
 │   
-│
-├─ register/
-│   ├─ register.php
-│   ├─ register.css
-│   
-│
-├─ config/
-│   └─ db.php
-│
-├─ sql/
-│   └─ users.sql
