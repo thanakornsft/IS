@@ -1,48 +1,68 @@
-<?php
-// จำลองข้อมูลการลงทุน
-$investments = [
-    ["type"=>"หุ้น", "name"=>"บริษัท A", "symbol"=>"A", "value"=>1250.50, "change"=>"+2.3%"],
-    ["type"=>"คริปโต", "name"=>"Bitcoin", "symbol"=>"BTC", "value"=>28000.75, "change"=>"-1.2%"],
-    ["type"=>"กองทุน", "name"=>"กองทุน ABC", "symbol"=>"ABC", "value"=>105.20, "change"=>"+0.8%"],
-    ["type"=>"ETF", "name"=>"ETF XYZ", "symbol"=>"XYZ", "value"=>500.00, "change"=>"+1.5%"]
-];
-?>
 <!DOCTYPE html>
 <html lang="th">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Investment Dashboard</title>
-<link rel="stylesheet" href="home.css">
+    <meta charset="UTF-8">
+    <title>Investment Platform</title>
+    <link rel="stylesheet" href="home.css">
 </head>
 <body>
-    <header>
-        <h1>💹 Investment Dashboard</h1>
-        <nav>
-            <a href="#">หน้าแรก</a>
-            <a href="#">โปรไฟล์</a>
-            <a href="#">Logout</a>
-        </nav>
-    </header>
 
-    <main>
-        <h2>รายการการลงทุนของคุณ</h2>
-        <div class="cards-container">
-            <?php foreach($investments as $inv): ?>
-            <div class="card">
-                <div class="card-header">
-                    <span class="type"><?php echo $inv['type']; ?></span>
-                    <span class="symbol"><?php echo $inv['symbol']; ?></span>
-                </div>
-                <h3><?php echo $inv['name']; ?></h3>
-                <p class="value">มูลค่า: ฿<?php echo number_format($inv['value'], 2); ?></p>
-                <p class="change <?php echo ($inv['change'][0] == '+') ? 'up' : 'down'; ?>">
-                    <?php echo $inv['change']; ?>
-                </p>
-                <button>ดูรายละเอียด</button>
-            </div>
-            <?php endforeach; ?>
+<!-- Navbar -->
+<nav class="navbar">
+    <div class="logo">WealthX</div>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Strategy</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+    <a href="#" class="btn-login">Login</a>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero">
+    <div class="hero-content">
+        <h1>Build Your Financial Future</h1>
+        <p>แพลตฟอร์มบริหารการลงทุนที่ออกแบบเพื่อการเติบโตระยะยาวอย่างมั่นคง</p>
+        <div class="hero-buttons">
+            <a href="#" class="btn-primary">เริ่มต้นเลย</a>
+            <a href="#" class="btn-secondary">เรียนรู้เพิ่มเติม</a>
         </div>
-    </main>
+    </div>
+</section>
+
+<!-- Features -->
+<section class="features">
+    <h2>Investment Solutions</h2>
+    <div class="cards">
+
+        <div class="card">
+            <h3>Asset Allocation</h3>
+            <p>วางแผนกระจายสินทรัพย์อย่างสมดุล ลดความเสี่ยง เพิ่มโอกาสเติบโต</p>
+        </div>
+
+        <div class="card">
+            <h3>Risk Management</h3>
+            <p>ระบบวิเคราะห์ความเสี่ยง เพื่อการตัดสินใจที่แม่นยำและปลอดภัย</p>
+        </div>
+
+        <div class="card">
+            <h3>Wealth Planning</h3>
+            <p>วางแผนการเงินระยะยาว เพื่อสร้างความมั่งคั่งอย่างยั่งยืน</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+    <h2>Start Growing Today</h2>
+    <a href="#" class="btn-primary">Create Account</a>
+</section>
+
+<footer>
+    © 2026 WealthX. All rights reserved.
+</footer>
+
 </body>
 </html>
