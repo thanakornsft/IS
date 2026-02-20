@@ -49,7 +49,7 @@ body{background:#0a0213;color:#fff;min-height:100vh;}
 <body>
 
 <nav class="navbar">
-  <a href="mutual_fund.php" class="btn-back">← ย้อนกลับ</a>
+  <a href="Mutual-fund-investing-page.php" class="btn-back">← ย้อนกลับ</a>
 </nav>
 
 <section class="hero">
