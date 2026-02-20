@@ -75,7 +75,7 @@ $f = $data[$type];
     <div class="box"><h3>กลยุทธ์</h3><p><?= $f['strategy'] ?></p></div>
   </div>
 
-  <a href="mutual_fund.php" class="back-btn">← กลับหน้ากองทุนรวม</a>
+  <a href="Mutual-fund-investing-page.php" class="back-btn">← ย้อนกลับ</a>
 </div>
 
 </body>

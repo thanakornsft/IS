@@ -12,7 +12,7 @@
 </div>
 
 <nav class="navbar">
-    <div class="logo">WealthNova</div>
+    <div class="logo">INVESTMENT</div>
     <a href="../home/home.php" class="btn-back">← กลับหน้าแรก</a>
 </nav>
 

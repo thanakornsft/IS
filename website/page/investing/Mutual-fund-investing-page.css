@@ -1,106 +1,324 @@
-/* mutual_fund.css – synced 100% with mutual_fund.php structure */
-*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
+/* ===============================
+   GLOBAL
+================================ */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
 
 body{
-  background:#0b0614;
-  color:#e5e5f0;
+    background:#0a0213;
+    color:#fff;
+    overflow-x:hidden;
 }
 
-/* ===== HERO ===== */
+/* ===============================
+   HERO
+================================ */
 .mf-hero{
-  min-height:60vh;
-  background:linear-gradient(180deg,#14001f,#0b0614);
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  text-align:center;
-  position:relative;
+    min-height:75vh;
+    background:linear-gradient(135deg,#12001f,#05000a);
+    position:relative;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    overflow:hidden;
 }
 
-.overlay{display:none;} /* keep class but disable effect */
+.overlay{
+    position:absolute;
+    inset:0;
+    background:
+        radial-gradient(circle at 30% 20%, rgba(180,0,255,0.15), transparent 40%),
+        radial-gradient(circle at 70% 80%, rgba(120,0,255,0.12), transparent 40%);
+    z-index:1;
+}
+
+.hero-content{
+    position:relative;
+    z-index:2;
+    animation:fadeUp 1.2s ease forwards;
+}
 
 .hero-content h1{
-  font-size:56px;
-  font-weight:700;
-  color:#c084fc;
+    font-size:3.2rem;
+    font-weight:800;
+    color:#c77dff;
+    text-shadow:0 0 25px rgba(160,60,255,0.4);
 }
 
 .hero-content p{
-  margin-top:15px;
-  color:#b8a9d9;
+    margin-top:12px;
+    font-size:1.05rem;
+    color:#e0c8ff;
+    opacity:.9;
 }
 
-/* ===== SECTION ===== */
+.lux-btn{
+    margin-top:25px;
+    padding:12px 36px;
+    border-radius:40px;
+    border:1px solid #a855f7;
+    background:linear-gradient(135deg,#2b014f,#3b0764);
+    color:#fff;
+    cursor:pointer;
+    transition:.4s;
+    box-shadow:0 0 25px rgba(168,85,247,.35);
+}
+
+.lux-btn:hover{
+    transform:translateY(-4px) scale(1.03);
+    box-shadow:0 0 40px rgba(168,85,247,.6);
+}
+
+/* ===============================
+   SECTION POSITION FIX
+================================ */
 .mf-section{
-  padding:40px 8% 80px;
-  margin-top:-40px;
+    margin-top:-200px;   /* <<< ดันขึ้นใต้ hero */
+    padding:120px 8% 120px;
+    position:relative;
+    z-index:5;
 }
 
+/* ===============================
+   GRID
+================================ */
 .mf-grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-  gap:30px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:28px;
 }
 
-/* ===== CARD BASE ===== */
+/* ===============================
+   CARD BASE
+================================ */
 .mf-card{
-  background:#14001f;
-  border:1px solid #2a0a3d;
-  border-radius:18px;
-  padding:30px;
-  transition:.3s;
+    background:rgba(30,5,55,.55);
+    backdrop-filter:blur(12px);
+    border-radius:22px;
+    padding:28px;
+    border:1px solid rgba(180,120,255,.18);
+    position:relative;
+    overflow:hidden;
+    transition:.5s cubic-bezier(.2,.8,.2,1);
+    transform-style:preserve-3d;
+    animation:floatCard 6s ease-in-out infinite;
 }
 
+/* hover motion */
 .mf-card:hover{
-  border-color:#7c3aed;
-  transform:translateY(-6px);
+    transform:translateY(-12px) scale(1.03) rotateX(3deg) rotateY(-3deg);
+    box-shadow:0 25px 80px rgba(140,60,255,.35);
 }
 
+/* glass shine */
+.mf-card::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:linear-gradient(120deg,transparent,rgba(255,255,255,.08),transparent);
+    transform:translateX(-100%);
+    transition:.6s;
+}
+
+.mf-card:hover::before{
+    transform:translateX(100%);
+}
+
+/* ===============================
+   TEXT
+================================ */
 .mf-card h2{
-  color:#c084fc;
-  margin-bottom:10px;
-  font-size:22px;
+    font-size:1.25rem;
+    color:#d9b3ff;
+    margin-bottom:8px;
 }
 
 .mf-card p{
-  color:#b8a9d9;
-  margin-bottom:12px;
-  font-size:14px;
+    font-size:.95rem;
+    color:#e6d6ff;
+    opacity:.85;
+    margin-bottom:14px;
 }
 
 .mf-card ul{
-  list-style:none;
-  padding-left:0;
+    list-style:none;
 }
 
 .mf-card ul li{
-  color:#d1c4e9;
-  font-size:14px;
-  padding:4px 0;
+    font-size:.85rem;
+    padding:6px 0;
+    color:#f2e9ff;
+    opacity:.85;
 }
 
-/* ===== VARIANT CLASSES (MATCH PHP) ===== */
-.glow{
-  border-color:#7c3aed;
-}
+/* ===============================
+   VARIANTS
+================================ */
+.glow{ box-shadow:0 0 35px rgba(160,60,255,.25); }
 
 .neon{
-  border-color:#9333ea;
+    border:1px solid #a855f7;
+    box-shadow:0 0 25px rgba(168,85,247,.45);
 }
 
 .luxury{
-  border-color:#5b21b6;
+    background:linear-gradient(145deg,rgba(40,0,80,.7),rgba(20,0,50,.7));
 }
 
 .gradient{
-  background:linear-gradient(180deg,#14001f,#1a0030);
-  border-color:#3b0764;
+    background:linear-gradient(145deg,#240046,#3c096c);
+}
+
+/* ===============================
+   ANIMATIONS
+================================ */
+@keyframes fadeUp{
+    from{opacity:0; transform:translateY(40px);}
+    to{opacity:1; transform:translateY(0);}
+}
+
+@keyframes floatCard{
+    0%,100%{ transform:translateY(0); }
+    50%{ transform:translateY(-6px); }
+}
+
+/* ===============================
+   SCROLL FEEL
+================================ */
+html{
+    scroll-behavior:smooth;
+}
+
+/* ===============================
+   PRO PANEL
+================================ */
+.pro-panel{
+    margin-top:40px;
+    display:flex;
+    justify-content:center;
+    position:relative;
+    z-index:10;
+}
+
+.pro-grid{
+    width:90%;
+    max-width:1200px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:22px;
+}
+
+/* card */
+.pro-card{
+    background:rgba(25,5,45,.55);
+    backdrop-filter:blur(14px);
+    border:1px solid rgba(180,120,255,.18);
+    border-radius:18px;
+    padding:22px 18px;
+    text-align:center;
+    cursor:pointer;
+    transition:.45s cubic-bezier(.2,.8,.2,1);
+    position:relative;
+    overflow:hidden;
+    box-shadow:0 0 25px rgba(140,60,255,.15);
+}
+
+/* glow line */
+.pro-card::after{
+    content:"";
+    position:absolute;
+    bottom:0;
+    left:0;
+    width:0%;
+    height:2px;
+    background:linear-gradient(90deg,#a855f7,#d946ef);
+    transition:.4s;
+}
+
+.pro-card:hover::after{
+    width:100%;
+}
+
+/* hover */
+.pro-card:hover{
+    transform:translateY(-10px) scale(1.03);
+    box-shadow:0 25px 60px rgba(160,60,255,.35);
+    background:rgba(35,5,65,.65);
+}
+
+/* icon */
+.pro-card span{
+    font-size:1.8rem;
+    display:block;
+    margin-bottom:8px;
+}
+
+/* text */
+.pro-card h3{
+    font-size:1rem;
+    color:#e9d5ff;
+    margin-bottom:6px;
+}
+
+.pro-card p{
+    font-size:.8rem;
+    color:#e0c8ff;
+    opacity:.85;
+}
+
+/* animation entry */
+.pro-card{
+    animation:fadeUp .8s ease forwards;
+}
+
+/* stagger effect */
+.pro-card:nth-child(1){animation-delay:.05s}
+.pro-card:nth-child(2){animation-delay:.1s}
+.pro-card:nth-child(3){animation-delay:.15s}
+.pro-card:nth-child(4){animation-delay:.2s}
+.pro-card:nth-child(5){animation-delay:.25s}
+.pro-card:nth-child(6){animation-delay:.3s}
+.pro-card:nth-child(7){animation-delay:.35s}
+.pro-card:nth-child(8){animation-delay:.4s}
+
+/* ===============================
+   HERO + PRO PANEL ALIGN FIX
+================================ */
+
+/* ดัน hero ให้เตี้ยลง */
+.mf-hero{
+    min-height:68vh;   /* ลดความสูง hero */
+}
+
+/* ดันข้อความ hero ลงน้อยลง */
+.hero-content{
+    transform: translateY(-40px);
+}
+
+/* PRO PANEL ชิดหัวข้อ */
+.pro-panel{
+    margin-top:-80px;   /* <<< ชิดใต้หัวข้อ */
+}
+
+/* PRO GRID ขยับขึ้นอีก */
+.pro-grid{
+    transform: translateY(-80px);
+}
+
+/* ลดช่องว่างด้านล่าง subtitle */
+.hero-content p{
+    margin-bottom:8px;
 }
 
 .btn-back{
     text-decoration:none;
     padding:8px 18px;
-    border-radius:50px;
+    border-radius:20px;
     border:1px solid #9d4edd;
     color:#c77dff;
     transition:0.3s;
@@ -120,12 +338,25 @@ footer{
     z-index:1;
 }
 
-/* 💎 Navbar */
+/* FIX CLICKABLE BACK BUTTON */
 .navbar{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:20px 60px;
-    background:rgba(255,255,255,0.05);
-    backdrop-filter:blur(15px);
+    position:relative;
+    z-index:9999;   /* ดันขึ้นบนสุด */
+    pointer-events:auto;
+}
+
+.btn-back{
+    position:relative;
+    z-index:9999;
+    pointer-events:auto;
+}
+
+/* ปิดการบังคลิกจาก overlay */
+.overlay{
+    pointer-events:none;
+}
+
+.btn-back{
+    background:#1a002b;
+    backdrop-filter:none;
 }
