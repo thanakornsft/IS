@@ -50,7 +50,7 @@ function openModule(type){
       <p>ระบบแนะนำการลงทุนอัจฉริยะ</p>
     </div>
 
-    <div class="pro-card" onclick="location.href='investor_quiz.php'">
+    <div class="pro-card" onclick="location.href='../investor-quiz/investor_quiz.php'">
       🧠
       <h3>Investor Quiz</h3>
       <p>วิเคราะห์สไตล์นักลงทุน</p>
