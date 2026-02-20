@@ -2,66 +2,63 @@
 <html lang="th">
 <head>
     <meta charset="UTF-8">
-    <title>Investment Platform</title>
+    <title>WealthNova - Investment Platform</title>
     <link rel="stylesheet" href="home.css">
 </head>
 <body>
 
-<!-- Navbar -->
+<div class="background">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+</div>
+
 <nav class="navbar">
-    <div class="logo">WealthX</div>
+    <div class="logo">WealthNova</div>
     <ul>
         <li><a href="#">Home</a></li>
-        <li><a href="#">Strategy</a></li>
-        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">Solutions</a></li>
+        <li><a href="#">Insights</a></li>
         <li><a href="#">Contact</a></li>
     </ul>
-    <a href="#" class="btn-login">Login</a>
+    <a href="#" class="btn-glow">Get Started</a>
 </nav>
 
-<!-- Hero Section -->
 <section class="hero">
     <div class="hero-content">
-        <h1>Build Your Financial Future</h1>
-        <p>แพลตฟอร์มบริหารการลงทุนที่ออกแบบเพื่อการเติบโตระยะยาวอย่างมั่นคง</p>
-        <div class="hero-buttons">
-            <a href="#" class="btn-primary">เริ่มต้นเลย</a>
-            <a href="#" class="btn-secondary">เรียนรู้เพิ่มเติม</a>
+        <h1>Next-Generation Wealth Platform</h1>
+        <p>ระบบบริหารการลงทุนระดับพรีเมียม เพื่ออนาคตทางการเงินที่มั่นคง</p>
+        <div class="buttons">
+            <a href="#" class="btn-primary">เริ่มต้นใช้งาน</a>
+            <a href="#" class="btn-outline">ดูรายละเอียด</a>
         </div>
     </div>
 </section>
 
-<!-- Features -->
 <section class="features">
-    <h2>Investment Solutions</h2>
-    <div class="cards">
-
-        <div class="card">
-            <h3>Asset Allocation</h3>
-            <p>วางแผนกระจายสินทรัพย์อย่างสมดุล ลดความเสี่ยง เพิ่มโอกาสเติบโต</p>
-        </div>
-
-        <div class="card">
-            <h3>Risk Management</h3>
-            <p>ระบบวิเคราะห์ความเสี่ยง เพื่อการตัดสินใจที่แม่นยำและปลอดภัย</p>
-        </div>
-
-        <div class="card">
-            <h3>Wealth Planning</h3>
-            <p>วางแผนการเงินระยะยาว เพื่อสร้างความมั่งคั่งอย่างยั่งยืน</p>
-        </div>
-
+    <div class="card">
+        <h3>Smart Allocation</h3>
+        <p>วิเคราะห์และกระจายสินทรัพย์อัตโนมัติอย่างมีประสิทธิภาพ</p>
+    </div>
+    <div class="card">
+        <h3>AI Risk Control</h3>
+        <p>ระบบบริหารความเสี่ยงอัจฉริยะเพื่อความปลอดภัยสูงสุด</p>
+    </div>
+    <div class="card">
+        <h3>Future Planning</h3>
+        <p>วางแผนสร้างความมั่งคั่งระยะยาวแบบมืออาชีพ</p>
     </div>
 </section>
 
-<!-- CTA -->
 <section class="cta">
-    <h2>Start Growing Today</h2>
-    <a href="#" class="btn-primary">Create Account</a>
+    <h2>Experience the Future of Investing</h2>
+    <a href="#" class="btn-glow">Create Account</a>
 </section>
 
 <footer>
-    © 2026 WealthX. All rights reserved.
+    © 2026 WealthNova. All rights reserved.
 </footer>
 
 </body>
