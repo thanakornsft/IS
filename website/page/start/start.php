@@ -23,7 +23,7 @@
 
 <section class="investment-grid">
 
-    <a href="fund.php" class="card">
+    <a href="../investing/Mutual-fund-investing-page.php" class="card">
         <h3>📊 กองทุนรวม</h3>
         <p>กระจายความเสี่ยง เหมาะสำหรับมือใหม่</p>
     </a>

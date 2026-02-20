@@ -1,103 +1,131 @@
-/* mutual_fund.css */
+/* mutual_fund.css – synced 100% with mutual_fund.php structure */
 *{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
 
 body{
-  background:#05000a;
-  color:white;
+  background:#0b0614;
+  color:#e5e5f0;
 }
 
+/* ===== HERO ===== */
 .mf-hero{
-  height:100vh;
-  background:radial-gradient(circle at top,#3b0764,#05000a 60%);
-  position:relative;
+  min-height:60vh;
+  background:linear-gradient(180deg,#14001f,#0b0614);
   display:flex;
   align-items:center;
   justify-content:center;
-}
-
-.overlay{
-  position:absolute;inset:0;
-  background:linear-gradient(180deg,rgba(0,0,0,.2),rgba(0,0,0,.8));
-}
-
-.hero-content{
-  position:relative;
   text-align:center;
-  z-index:2;
+  position:relative;
 }
+
+.overlay{display:none;} /* keep class but disable effect */
 
 .hero-content h1{
-  font-size:70px;
-  font-weight:800;
-  background:linear-gradient(90deg,#a855f7,#ec4899,#8b5cf6);
-  -webkit-background-clip:text;
-  color:transparent;
-  text-shadow:0 0 50px rgba(168,85,247,.5);
+  font-size:56px;
+  font-weight:700;
+  color:#c084fc;
 }
 
 .hero-content p{
-  margin-top:20px;
-  opacity:.85;
+  margin-top:15px;
+  color:#b8a9d9;
 }
 
-.lux-btn{
-  margin-top:40px;
-  padding:16px 50px;
-  border:none;
-  border-radius:40px;
-  background:linear-gradient(135deg,#7c3aed,#ec4899);
-  color:white;
-  font-weight:600;
-  letter-spacing:1px;
-  cursor:pointer;
-  box-shadow:0 0 40px rgba(168,85,247,.6);
-  transition:.4s;
-}
-
-.lux-btn:hover{transform:scale(1.1);box-shadow:0 0 80px rgba(236,72,153,.9);} 
-
+/* ===== SECTION ===== */
 .mf-section{
-  padding:120px 10%;
+  padding:40px 8% 80px;
+  margin-top:-40px;
 }
 
 .mf-grid{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-  gap:40px;
+  gap:30px;
 }
 
+/* ===== CARD BASE ===== */
 .mf-card{
-  background:rgba(30,0,50,0.6);
-  border-radius:25px;
-  padding:40px;
-  backdrop-filter:blur(20px);
-  box-shadow:0 0 60px rgba(168,85,247,.15);
-  transition:.6s cubic-bezier(.16,1,.3,1);
-  position:relative;
-  overflow:hidden;
+  background:#14001f;
+  border:1px solid #2a0a3d;
+  border-radius:18px;
+  padding:30px;
+  transition:.3s;
 }
-
-.mf-card::before{
-  content:"";
-  position:absolute;inset:0;
-  background:linear-gradient(120deg,transparent,rgba(255,255,255,.15),transparent);
-  transform:translateX(-100%);
-  transition:.8s;
-}
-
-.mf-card:hover::before{transform:translateX(100%);} 
 
 .mf-card:hover{
-  transform:translateY(-20px) scale(1.03);
-  box-shadow:0 0 120px rgba(168,85,247,.6);
+  border-color:#7c3aed;
+  transform:translateY(-6px);
 }
 
-.mf-card h2{font-size:26px;margin-bottom:10px;}
-.mf-card p{opacity:.85;margin-bottom:15px;}
-.mf-card ul{list-style:none;}
-.mf-card ul li{padding:6px 0;opacity:.85;}
+.mf-card h2{
+  color:#c084fc;
+  margin-bottom:10px;
+  font-size:22px;
+}
 
-.glow{border:1px solid rgba(168,85,247,.4);} 
-.neon{box-shadow:0 0 80px rgba(139,92,246,.4);} 
-.gradient{background:linear-gradient(160deg,#1a002b,#3b0764);} 
-.luxury{border:1px solid rgba(255,215,0,.25);}
+.mf-card p{
+  color:#b8a9d9;
+  margin-bottom:12px;
+  font-size:14px;
+}
+
+.mf-card ul{
+  list-style:none;
+  padding-left:0;
+}
+
+.mf-card ul li{
+  color:#d1c4e9;
+  font-size:14px;
+  padding:4px 0;
+}
+
+/* ===== VARIANT CLASSES (MATCH PHP) ===== */
+.glow{
+  border-color:#7c3aed;
+}
+
+.neon{
+  border-color:#9333ea;
+}
+
+.luxury{
+  border-color:#5b21b6;
+}
+
+.gradient{
+  background:linear-gradient(180deg,#14001f,#1a0030);
+  border-color:#3b0764;
+}
+
+.btn-back{
+    text-decoration:none;
+    padding:8px 18px;
+    border-radius:50px;
+    border:1px solid #9d4edd;
+    color:#c77dff;
+    transition:0.3s;
+}
+
+.btn-back:hover{
+    background:#9d4edd;
+    color:#fff;
+}
+
+/* ให้เนื้อหาอยู่ด้านบน */
+.navbar,
+.header,
+.investment-grid,
+footer{
+    position:relative;
+    z-index:1;
+}
+
+/* 💎 Navbar */
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 60px;
+    background:rgba(255,255,255,0.05);
+    backdrop-filter:blur(15px);
+}

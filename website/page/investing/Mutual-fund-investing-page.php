@@ -4,7 +4,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Mutual Fund Investment</title>
-<link rel="stylesheet" href="mutual_fund.css">
+<link rel="stylesheet" href="Mutual-fund-investing-page.css">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -13,14 +13,17 @@
   <div class="hero-content">
     <h1>Mutual Fund Investment</h1>
     <p>ระบบการลงทุนกองทุนรวมแบบมืออาชีพ</p>
-    <button class="lux-btn">Start Investing</button>
   </div>
 </div>
-
+<div>
+  <nav class="navbar">
+    <a href="../start/start.php" class="btn-back">← ย้อนกลับ</a>
+</nav>
+</div>
 <section class="mf-section">
   <div class="mf-grid">
 
-    <div class="mf-card">
+    <div class="mf-card" onclick="location.href='fund_detail.php?type=money'">
       <h2>กองทุนตลาดเงิน</h2>
       <p>ความเสี่ยงต่ำ เหมาะสำหรับพักเงิน</p>
       <ul>
@@ -30,7 +33,7 @@
       </ul>
     </div>
 
-    <div class="mf-card">
+    <div class="mf-card" onclick="location.href='fund_detail.php?type=bond'">
       <h2>กองทุนตราสารหนี้</h2>
       <p>รายได้สม่ำเสมอ ความเสี่ยงปานกลาง</p>
       <ul>
@@ -40,7 +43,7 @@
       </ul>
     </div>
 
-    <div class="mf-card glow">
+    <div class="mf-card" onclick="location.href='fund_detail.php?type=stock'">
       <h2>กองทุนหุ้น</h2>
       <p>โอกาสเติบโตสูง ระยะยาว</p>
       <ul>
@@ -50,7 +53,7 @@
       </ul>
     </div>
 
-    <div class="mf-card neon">
+    <div class="mf-card" onclick="location.href='fund_detail.php?type=mixed'">
       <h2>กองทุนรวมผสม</h2>
       <p>สมดุลความเสี่ยงและผลตอบแทน</p>
       <ul>
@@ -60,7 +63,7 @@
       </ul>
     </div>
 
-    <div class="mf-card luxury">
+    <div class="mf-card" onclick="location.href='fund_detail.php?type=esg'">
       <h2>กองทุน ESG</h2>
       <p>ลงทุนอย่างยั่งยืนระดับโลก</p>
       <ul>
@@ -70,7 +73,7 @@
       </ul>
     </div>
 
-    <div class="mf-card gradient">
+    <div class="mf-card" onclick="location.href='fund_detail.php?type=global'">
       <h2>กองทุนต่างประเทศ</h2>
       <p>โอกาสเติบโตระดับ Global</p>
       <ul>
