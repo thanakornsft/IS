@@ -56,7 +56,7 @@ function openModule(type){
       <p>จัดอันดับกองทุน</p>
     </div>
 
-    <div class="pro-card" onclick="location.href='portfolio_builder.php'">
+    <div class="pro-card" onclick="location.href='/website/page/investing/smart_portfolio.php'">
       💼
       <h3>Smart Portfolio</h3>
       <p>สร้างพอร์ตอัตโนมัติ</p>

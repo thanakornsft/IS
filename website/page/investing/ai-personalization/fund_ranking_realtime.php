@@ -76,6 +76,10 @@ h1{
 </head>
 
 <body>
+<nav class="navbar">
+  <a href="/website/page/investing/Mutual-fund-investing-page.php" class="btn-back">← ย้อนกลับ</a>
+</nav>
+
 <div class="container">
     <h1>📡 AI Fund Ranking Realtime Engine</h1>
     <div class="live">● LIVE AI DATA STREAMING</div>
@@ -111,3 +115,14 @@ setInterval(loadRanking, 2000); // update every 2s
 
 </body>
 </html>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
+body{background:#0a0213;color:#fff;min-height:100vh;}
+
+/* NAVBAR */
+.navbar{padding:18px 30px;position:sticky;top:0;background:#12001f;z-index:10;border-bottom:1px solid rgba(168,85,247,.3);} 
+.btn-back{color:#e9d5ff;text-decoration:none;border:1px solid #a855f7;padding:8px 22px;border-radius:30px;transition:.3s;}
+.btn-back:hover{background:#2b014f;box-shadow:0 0 20px rgba(168,85,247,.5);}
+
+</style>
