@@ -1,6 +1,0 @@
-body{background:#0a0213;color:white;font-family:Poppins}
-.panel{max-width:900px;margin:auto;background:#12001f;padding:40px;border-radius:25px}
-select,input{width:100%;padding:10px;margin:8px 0;border-radius:10px;border:none}
-button{margin-top:15px;padding:12px 35px;border-radius:30px;border:none;background:#7c3aed;color:white;cursor:pointer}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:15px}
-.card{background:#1a0030;padding:15px;border-radius:15px;text-align:center}

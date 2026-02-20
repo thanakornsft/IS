@@ -50,12 +50,6 @@ function openModule(type){
       <p>ระบบแนะนำการลงทุนอัจฉริยะ</p>
     </div>
 
-    <div class="pro-card" onclick="location.href='ai-personalization/personalization_ui.php'">
-      🧠
-      <h3>AI Personalization System</h3>
-      <p>วิเคราะห์สไตล์นักลงทุน</p>
-    </div>
-
     <div class="pro-card" onclick="location.href='fund_ranking.php'">
       🏦
       <h3>Fund Ranking</h3>
