@@ -13,7 +13,7 @@ $investments = [
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Investment Dashboard</title>
-<link rel="stylesheet" href="investments.css">
+<link rel="stylesheet" href="home.css">
 </head>
 <body>
     <header>
