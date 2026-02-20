@@ -2,7 +2,7 @@
 <html lang="th">
 <head>
     <meta charset="UTF-8">
-    <title>WealthNova - Investment Platform</title>
+    <title>EDUCATION FOR INVESTMENT</title>
     <link rel="stylesheet" href="home.css">
 </head>
 <body>
@@ -16,9 +16,9 @@
 </div>
 
 <nav class="navbar">
-    <div class="logo">WealthNova</div>
+    <div class="logo">INVESTMENT</div>
     <ul>
-        <li><a href="#">Home</a></li>
+        <li><a href="home.php">Home</a></li>
         <li><a href="#">Solutions</a></li>
         <li><a href="#">Insights</a></li>
         <li><a href="#">Contact</a></li>
@@ -28,7 +28,7 @@
 
 <section class="hero">
     <div class="hero-content">
-        <h1>Next-Generation Wealth Platform</h1>
+        <h1>Next-Generation Education for Investment Platform</h1>
         <p>ระบบบริหารการลงทุนระดับพรีเมียม เพื่ออนาคตทางการเงินที่มั่นคง</p>
         <div class="buttons">
             <a href="#" class="btn-primary">เริ่มต้นใช้งาน</a>
@@ -58,7 +58,7 @@
 </section>
 
 <footer>
-    © 2026 WealthNova. All rights reserved.
+    © 2026 Education for investment. All rights reserved.
 </footer>
 
 </body>
