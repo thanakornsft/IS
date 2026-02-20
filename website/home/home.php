@@ -28,9 +28,10 @@
 
 <section class="hero">
     <div class="hero-content">
-        <h1>Next-Generation Education for Investment Platform</h1>
+        <h1>Next-Generation Education for  Platform</h1>
         <p>ระบบบริหารการลงทุนระดับพรีเมียม เพื่ออนาคตทางการเงินที่มั่นคง</p>
         <div class="buttons">
+            <a href="#" class="btn-primary">เริ่มต้นใช้งาน</a>
             <a href="#" class="btn-outline">ดูรายละเอียด</a>
         </div>
     </div>
