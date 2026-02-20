@@ -13,7 +13,7 @@
 
 <nav class="navbar">
     <div class="logo">WealthNova</div>
-    <a href="home.php" class="btn-back">← กลับหน้าแรก</a>
+    <a href="../home/home.php" class="btn-back">← กลับหน้าแรก</a>
 </nav>
 
 <section class="header">
@@ -86,7 +86,7 @@
 </section>
 
 <footer>
-    © 2026 WealthNova
+    © 2026 Education for investment. All rights reserved.
 </footer>
 
 </body>

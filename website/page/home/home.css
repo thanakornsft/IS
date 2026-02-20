@@ -87,22 +87,6 @@ footer{
     color:#c77dff;
 }
 
-/* Glow Button */
-.btn-glow{
-    padding:10px 20px;
-    border-radius:30px;
-    background:linear-gradient(90deg,#7209b7,#9d4edd);
-    color:#fff;
-    text-decoration:none;
-    box-shadow:0 0 20px #9d4edd;
-    transition:0.3s;
-}
-
-.btn-glow:hover{
-    transform:scale(1.05);
-    box-shadow:0 0 35px #c77dff;
-}
-
 /* Hero */
 .hero{
     height:90vh;

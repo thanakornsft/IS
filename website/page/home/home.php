@@ -31,7 +31,7 @@
         <h1>Next-Generation Education for  Platform</h1>
         <p>แฟรตแพลตฟอร์มที่ตอบโจทย์นักลงทุนในทุกรูปแบบ ยกระดับการศึกษาของการลงทุนเพื่อทุกคน</p>
         <div class="buttons">
-            <a href="home.php" class="btn-primary">เริ่มต้นใช้งาน</a>
+            <a href="../start/start.php" class="btn-primary">เริ่มต้นใช้งาน</a>
             <a href="#" class="btn-outline">ดูรายละเอียด</a>
         </div>
     </div>
@@ -50,11 +50,6 @@
         <h3>Future Planning</h3>
         <p>วางแผนสร้างความมั่งคั่งระยะยาวแบบมืออาชีพ</p>
     </div>
-</section>
-
-<section class="cta">
-    <h2>Experience the Future of Investing</h2>
-    <a href="#" class="btn-glow">Create Account</a>
 </section>
 
 <footer>
