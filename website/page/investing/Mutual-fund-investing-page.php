@@ -50,7 +50,7 @@ function openModule(type){
       <p>ระบบแนะนำการลงทุนอัจฉริยะ</p>
     </div>
 
-    <div class="pro-card" onclick="location.href='ai-personalization/fund_ranking_realtime.php'">
+    <div class="pro-card" onclick="location.href='../investing/fund_sheet.php'">
       🏦
       <h3>Fund Ranking</h3>
       <p>จัดอันดับกองทุน</p>
