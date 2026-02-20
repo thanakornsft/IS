@@ -12,6 +12,15 @@ body{
 }
 
 /* 🌌 Animated Background */
+.background{
+    position:fixed;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    z-index:0;
+}
+
 .background span{
     position:absolute;
     width:200px;
@@ -19,6 +28,7 @@ body{
     background: radial-gradient(circle, #9d4edd, transparent);
     animation: float 20s linear infinite;
     opacity:0.3;
+    pointer-events: none; /* 🔥 ทำให้ไม่บังปุ่ม */
 }
 
 .background span:nth-child(1){ top:10%; left:20%; animation-duration:25s;}
@@ -33,6 +43,16 @@ body{
     100%{ transform: translateY(0) rotate(360deg);}
 }
 
+/* 🔥 ให้คอนเทนต์อยู่ชั้นบน */
+.navbar,
+.hero,
+.features,
+.cta,
+footer{
+    position:relative;
+    z-index:1;
+}
+
 /* Navbar */
 .navbar{
     display:flex;
@@ -41,8 +61,6 @@ body{
     padding:20px 60px;
     backdrop-filter: blur(15px);
     background: rgba(255,255,255,0.05);
-    position:relative;
-    z-index:10;
 }
 
 .logo{
@@ -101,13 +119,13 @@ body{
     background:linear-gradient(90deg,#fff,#c77dff);
     -webkit-background-clip:text;
     -webkit-text-fill-color:transparent;
-    animation: fadeUp 2s ease;
+    animation: fadeUp 1.5s ease;
 }
 
 .hero p{
     color:#bbb;
     margin-bottom:30px;
-    animation: fadeUp 3s ease;
+    animation: fadeUp 2s ease;
 }
 
 @keyframes fadeUp{
@@ -121,6 +139,7 @@ body{
     border-radius:30px;
     text-decoration:none;
     transition:0.3s;
+    display:inline-block;
 }
 
 .btn-primary{
@@ -128,9 +147,18 @@ body{
     color:#fff;
 }
 
+.btn-primary:hover{
+    transform:scale(1.05);
+}
+
 .btn-outline{
     border:1px solid #9d4edd;
     color:#9d4edd;
+}
+
+.btn-outline:hover{
+    background:#9d4edd;
+    color:#fff;
 }
 
 /* 💎 SaaS Glass Cards */
